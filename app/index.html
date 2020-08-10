@@ -150,11 +150,12 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <a class="header__btn header__btn-login " href="#">Login</a>
+                                <a class="header__btn header__btn-login " data-fancybox data-animation-duration="700"
+                                    data-src="#animatedModal" href="javascript:;">Login</a>
                                 <a class="header__btn header__btn-logout header__btn-login--off" href="">Logout</a>
                                 <a class="header__btn header__btn-register " href="#">Register</a>
                             </div>
-                            <div class="header__btn-menu icon-user" >
+                            <div class="header__btn-menu icon-user">
 
                             </div>
                         </div>
@@ -164,9 +165,9 @@
                     <div class="container">
                         <nav class="menu">
                             <div class="menu__btn">
-                               <div></div>
-                               <div></div>
-                               <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
                             </div>
                             <ul class="menu__list">
                                 <li>
@@ -906,6 +907,25 @@
 
     </div>
 
+    <div id="animatedModal">
+        <div class="login__wrapper">
+            <div class="login__title">
+                Login
+            </div>
+            <form>
+                <label class="login__label-name">
+                    <input type="text" placeholder="Name" required>
+                </label>
+                <label class="login__label-pass">
+                    <input type="text" placeholder="Password" required>
+                </label>
+                <button type="submit">Submit</button>
+                <a class="creat-acc" href="#">Create An Account?</a>
+                <a class="lost-pass" href="#"> Lost Passwoed?</a>
+            </form>
+
+        </div>
+    </div>
     <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/libs.min.js"></script>
